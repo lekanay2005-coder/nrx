@@ -1,0 +1,21 @@
+{
+  "name": "fun-chat",
+  "version": "0.1.0",
+  "description": "Fun Chat — minimal Socket.io chat with groups and private messages",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm install"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.2.1",
+    "firebase-admin": "^13.6.1",
+    "firebase-functions": "^7.0.5",
+    "jsonwebtoken": "^9.0.3",
+    "socket.io": "^4.8.3"
+  },
+  "engines": {
+    "node": "18"
+  }
+}

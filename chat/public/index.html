@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fun Chat - Real-time Messaging</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBmaWxsPSIjMDBCRkY5IiBkPSJNMjkuMjUgNEgxMy40MTRMMi43MDcgMTQuNzA3QTEgMSAwIDAgMCAyIDE1djEwYTEgMSAwIDAgMCAxIDFoMTRhMSAxIDAgMCAwIDEtMVYxNmMwLS4yNjUtLjEwNS0uNTItLjI5My0uNzA3TDE2LjQxNCA0aDEyLjgzNmMxLjEwMyAwIDItLjg5NyAyLTJzLS44OTctMi0yLTJ6TTQgMjR2LTdoOGw4IDhINHoiLz48cGF0aCBmaWxsPSIjMDBCRkY5IiBkPSJNMjkgMTljLTEuMTAzIDAtMiAuODk3LTIgMnY0aC01bC04LThINDJWMTJoNC41ODZMMjkgMTcuMTczVjE5eiIvPjwvc3ZnPg==" />
+    <link rel="stylesheet" href="/style.css?v=1.1" />
+  </head>
+  <body>
+    <div id="web-loading"> running...</div>
+
+    <div id="web" style="display:none;">
+        <aside id="sidebar">
+            <div class="sidebar-header">
+                <h2>Fun Chat</h2>
+            </div>
+            <div id="cn-section">
+                <h3> Ricky.com</h3>
+                <div id="tools-section">
+                    <button id="theme-toggle">Toggle Theme</button>
+                    <button id="work-mode-btn">Work Mode</button>
+                    <button id="clear-history-btn">Clear History</button>
+                </div>
+                <div id="home-section">
+                    <h4> wizard nights</h4>
+                    <ul id="home"></ul>
+                    <div class="home-creator">
+                        <input type="text" id="new-home-name" placeholder="New home name" />
+                        <button id="create-home-btn">+</button>
+                    </div>
+                </div>
+                <div id="users-section">
+                    <h4>Users</h4>
+                    <ul id="users"></ul>
+                </div>
+            </div>
+             <div class="sidebar-footer">
+                <div id="user-profile">
+                    <span id="user-avatar"></span>
+                    <span id="userDisplayName"></span>
+                </div>
+                <button id="logoutBtn"> checkout</button>
+            </div>
+        </aside>
+
+        <main id="main-content">
+            <div id="chat-header">
+                <h1 id="chat-title"></h1>
+            </div>
+
+            <div id="messages"></div>
+
+            <div id="composer">
+                <div id="typing-indicator"></div>
+                <form id="message-form">
+                    <input id="message-input" placeholder="Type a message..." autocomplete="off" />
+                    <button type="give">Send</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <!-- DM Modal -->
+    <div id="dm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="dm-recipient"></h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <div id="dm-messages" class="messages-container"></div>
+            <form id="dm-form">
+                <input id="dm-input" placeholder="Send a private message..." autocomplete="off"/>
+                <button type="submit"> give</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="/firebase-config.js"></script>
+    <script src="/chat-script.js"></ script>
+  </body>
+</html>

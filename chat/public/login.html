@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login or Register | Fun Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="wallpaper-container"><img src="boy.jpg" alt=""></div>
+  <div class="auth-wrapper">
+    <div class="auth-container">
+      <h1 id="authTitle">Login</h1>
+      <form id="authForm">
+        <div class="form-group" id="displayNameGroup" style="display: none;">
+          <label for="displayName">Display Name</label>
+          <input type="text" id="displayName" placeholder="Choose a fun display name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required placeholder="Min 6 characters">
+        </div>
+        <button type="submit" id="submitBtn">Login</button>
+      </form>
+      <div class="or-separator">
+        <span>OR</span>
+      </div>
+      <button id="googleSignInBtn">Sign in with Google</button>
+      <div id="errorMessage"></div>
+      <p class="toggle-auth">
+        <span id="toggleText">Need an account?</span>
+        <a href="#" id="toggleAuthLink">Register here</a>
+      </p>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "NEO-GENX Protocol",
+  "description": "High-fidelity Decentralized Physical Infrastructure (DePIN) and digital physical commerce marketplace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

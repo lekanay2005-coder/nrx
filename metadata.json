@@ -1,0 +1,8 @@
+{
+  "name": "ComeBack AI",
+  "description": "The AI Recovery Coach That Helps You Restart abandoned goals with intelligent recovery plans, compassionate coaching, and burnout detection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

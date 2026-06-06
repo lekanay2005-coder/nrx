@@ -1,0 +1,33 @@
+/* General Styles */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.5rem;
+    --font-size-sm: .875rem;
+    --line-height-base: 1.5;
+
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+    --text-muted-color: #6c757d;
+    --border-color: #dee2e6;
+    --border-radius: .3rem;
+
+    --sidebar-bg: #ffffff;
+    --hover-bg: #e9ecef;
+    --active-room-bg: var(--primary-color);
+    --chat-header-bg: rgba(255, 255, 255, 0.9);
+    
+    --own-message-bg: var(--primary-color);
+    --other-message-bg: #ffffff;
+    --system-message-color: var(--text-muted-color);
+
+    --modal-bg: #ffffff;
+    --favicon-url: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBmaWxsPSIjMDBCRkY5IiBkPSJNMjkuMjUgNEgxMy40MTRMMi43MDcgMTQuNzA3QTEgMSAwIDAgMCAyIDE1djEwYTEgMSAwIDAgMCAxIDFoMTRhMSAxIDAgMCAwIDEtMVYxNmMwLS4yNjUtLjEwNS0uNTItLjI5My0uNzA3TDE2LjQxNCA0aDEyLjgzNmMxLjEwMyAwIDItLjg5NyAyLTJzLS44OTctMi0yLTJ6TTQgMjR2LTdoOGw4IDhINHoiLz48cGF0aCBmaWxsPSIjMDBCRkY5IiBkPSJNMjkgMTljLTEuMTAzIDAtMiAuODk3LTIgMnY0aC01bC04LThINDJWMTJoNC41ODZMMjkgMTcuMTczVjE5eiIvPjwvc3ZnPg==');
+}
